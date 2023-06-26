@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Kalango - Inicio</title>
+</head>
+<body>
+  <nav>
+    <div id="menu">
+      <button onclick="menuLogin.classList.toggle('hidden')" style="cursor: pointer;" >Entrar</button>
+      <img onclick="location.reload()" style="cursor:pointer;" src="Kalango Logo.png" alt="logokalango.png">
+      <a href="index.html">Home</a>
+      <a href="contato.html">Contato</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="milhas.html">Milhas</a>
+      <a href="gratuidade.html">Gratuidade</a>
+    </div>
+  </nav>
+
+  <div class="popup hidden">
+    <div class="pop-items">
+      <label for="usuario">Usuário</label>
+        <input type="text" placeholder="Diego">
+      
+      <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+        <button>Logar</button>
+    </div>
+  </div>
+
+  <section id="destinatario">
+    <div class="img"><img src="Fundo.jpg" alt="Patio Kalango"></div>
+    <span class="busca-passagem"> <input type="text" placeholder="Origem"> <button class="trocar" onclick="trocarLados()">⇆</button> <input type="text" placeholder="Destino"></span>
+    <br>
+    <span class="data-passagem">
+      <input type="date" name="ida" id="ida">
+      <input type="date" name="volta" id="volta">
+       <span class="limpar" onclick="limparBuscar()">limpar busca</span>
+      <button onclick="buscarPassagem()"><a href="passagens.html">Buscar</a></button>
+    <span>
+  </section>
+  <h3>Recomendado para você</h3>
+  <br>
+  <br>
+  <section id="ofertas">
+    <article>
+      <a href=""><img src="Promoção 1.jpg" alt="ba-rj"></a>
+      <a href=""><img src="Promoção 2.jpg" alt="rj-sp"></a>
+      <a href=""><img src="Promoção 3.jpg" alt="sv-vn"></a>
+    </article>
+  </section>
+  <section id="tipos-classes">
+    <h3>Para você, Cliente</h3>
+    <p class="nossas-ofertas">Entenda nossas ofertas</p>
+    <article onclick="menuExec.classList.toggle('hidden')" class="classes">
+      <h4>Executivo</h4> 
+      <p class="menu-exec hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velit accusantium sunt totam ex quo aliquam quis iure harum eveniet? Culpa explicabo optio, quas et hic repellendus, dolore illo nostrum necessitatibus at ab dolorem odit.</p>
+    </article>
+    <br>
+    <article onclick="menuSemi.classList.toggle('hidden')" class="classes">
+      <h4>Semi Leito</h4>
+      <p class="menu-semi hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsam porro, iste sint rerum quos ducimus delectus assumenda, aspernatur ad nemo ex fugiat adipisci! Quibusdam cum magni dolores ab earum. Aliquam et natus quo incidunt doloribus voluptatum nobis? Libero alias dolor impedit unde provident exercitationem, tempore enim sunt vero ab!</p>
+    </article>
+    <br>
+    <article onclick="menuLeito.classList.toggle('hidden')" class="classes">
+      <h4>Leito-Cama</h4>
+      <p class="menu-leito hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero saepe hic fugiat aut explicabo unde veniam quam quos ab officia eveniet eum voluptas error optio quaerat tempora beatae quae, molestiae quibusdam perspiciatis veritatis nobis. Dicta vel porro ducimus, maxime corporis ipsam hic excepturi ea eius praesentium nostrum in animi aperiam? Nobis quis eaque culpa iusto sed recusandae dolorem soluta non modi! Est minus consequuntur eius nesciunt similique explicabo. Doloribus delectus laboriosam facilis nemo vel cum, quas alias maxime voluptas, laudantium ducimus. Iste tenetur ab reiciendis error ex minus libero reprehenderit ratione unde possimus iure, nesciunt ipsa animi, natus sint fugit.</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>Todos os Direitos Reservados</p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
